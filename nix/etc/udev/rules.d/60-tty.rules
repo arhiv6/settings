@@ -1,0 +1,11 @@
+# Rules for /dev/tty*
+# http://stackoverflow.com/questions/12818987/pass-attridvendor-as-argument-in-udev-script
+
+# Connect rules
+KERNEL=="ttyUSB[0-9]*",MODE="0666",ACTION=="add",RUN+="/usr/local/scripts/notify-send_custom.sh Connect $kernel"
+KERNEL=="ttyACM[0-9]*",MODE="0666",ACTION=="add",RUN+="/usr/local/scripts/notify-send_custom.sh Connect $kernel"
+
+# Disconnect rules
+KERNEL=="ttyUSB[0-9]*",ACTION=="remove",RUN+="/usr/local/scripts/notify-send_custom.sh Disconnect $kernel"
+KERNEL=="ttyACM[0-9]*",ACTION=="remove",RUN+="/usr/local/scripts/notify-send_custom.sh Disconnect $kernel"
+

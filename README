@@ -1,0 +1,7 @@
+Repository includes my settings and custom scripts.
+
+1. The rule change access permissions for /dev/tty* devices
+   and notify their connecting and disconnecting.
+file: nix/etc/udev/rules.d/60-tty.rules
+file: nix/usr/local/scripts/notify-send_custom.sh
+
