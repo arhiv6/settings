@@ -5,3 +5,5 @@ Repository includes my settings and custom scripts.
 file: nix/etc/udev/rules.d/60-tty.rules
 file: nix/usr/local/scripts/notify-send_custom.sh
 
+2. Astyle config:
+--style=bsd --add-brackets --indent-switches --pad-header --unpad-paren --pad-oper --align-pointer=name
