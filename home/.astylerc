@@ -1,2 +1,2 @@
 # Configuration file for Artistic Style util
---style=bsd --add-brackets --indent-switches --pad-header --unpad-paren --pad-oper --align-pointer=name
+--style=bsd --add-brackets --indent-switches --pad-header --unpad-paren --pad-oper --align-pointer=name --indent-preproc-block --indent-preproc-define
