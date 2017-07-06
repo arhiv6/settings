@@ -1,0 +1,2 @@
+# Rules for Versaloon
+SUBSYSTEM=="usb", ATTR{idVendor}=="0483", ATTR{idProduct}=="a038", MODE="666"
