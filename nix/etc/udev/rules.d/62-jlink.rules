@@ -1,0 +1,3 @@
+# Rules for JLink
+
+ATTR{idProduct}=="0105", ATTR{idVendor}=="1366", MODE="666"
