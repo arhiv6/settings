@@ -1,0 +1,6 @@
+[diff]
+    tool = meld
+[difftool "meld"]
+    cmd = meld $LOCAL $REMOTE
+[alias]
+    meld = difftool --dir-diff
